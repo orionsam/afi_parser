@@ -30,8 +30,8 @@ public class Obrada {
 	
 	public static void obradaE(String filePath, boolean oblast, boolean autori, boolean kljucne) throws Exception{
 		System.out.println(filePath);
-		filePath = "C:\\Users\\irena.mitrovic\\rad\\afi\\test.xlsx";
-		FileOutputStream out = new FileOutputStream(new File("C:\\Users\\irena.mitrovic\\rad\\afi\\testR.xlsx"));
+		filePath = "C:\\test.xlsx";
+		FileOutputStream out = new FileOutputStream(new File("C:\\testR.xlsx"));
 		FileInputStream file = new FileInputStream(new File(filePath));
 		XSSFWorkbook wb = new XSSFWorkbook(file); // ulazni excel
 		XSSFWorkbook wbE = new XSSFWorkbook(); //izlazni excel
